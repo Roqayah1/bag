@@ -1,0 +1,122 @@
+body{
+    background-color: aliceblue;
+}
+.nav1{
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: #f3f4f6;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    list-style: none;
+}
+.nav1 .logo h4{
+    color: #424144;
+    border-bottom: 4px solid #68869A;
+}
+
+.nav1 .ul1 li{
+    
+    display: inline-block;
+}
+.nav1 .ul1 li a{
+    display: block;
+    margin-left: 30px;
+    color: #424144;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav1 .ul1 li .active{
+    border-bottom: 4px solid #68869A;
+}
+
+.nav1 .ul1 li a i{
+    color: #68869A;
+}
+
+.nav1 .ul1 li a:hover{
+    border-bottom: 4px solid #68869A;
+}
+.group {
+ display: flex;
+ align-items: center;
+ position: relative;
+ max-width: 450px;
+ padding: 20 30%;
+ display: flex;
+ justify-content: right;
+ background-attachment: fixed;
+ text-align: right;
+}
+
+.input {
+ padding: 3px 30px;
+ margin: 10px;
+ width: 100%;
+ height: 40px;
+ padding-left: 2.5rem;
+ border: 2px solid transparent;
+ border-radius: 8px;
+ outline: none;
+ background-color: #fff;
+ color: #0d0c22;
+ transition: .3s ease;
+ padding: 0 5%;
+ display: flex;
+ justify-content: right;
+ background-attachment: fixed;
+ text-align: right;
+}
+
+.input::placeholder {
+ color: #9e9ea7;
+}
+
+.input:focus, input:hover {
+ outline: none;
+ border-color: rgba(234,76,137,0.4);
+ background-color: #fff;
+ box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+ position: absolute;
+ left: 1rem;
+ fill: #9e9ea7;
+ width: 130%;
+ height: 1rem;
+
+
+}
+.main{
+    padding: 0 5%;
+    display: flex;
+    justify-content: left;
+    background-attachment: fixed;
+    text-align: right;
+}
+.main2{
+    padding: 0 22%;
+    display: flex;
+    justify-content: left;
+    background-attachment: fixed;
+}
+.h{
+    color: #0C4160;
+    display: inline-block;
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.a{
+    color: #417DA9;
+    font-size: 1.9em;
+}
+
