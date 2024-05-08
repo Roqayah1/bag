@@ -6,12 +6,18 @@
   margin: auto;
 }
 .form {
-  background: #417DA9;
+  background: #b6c1c967;
   align-items: center;
   justify-content: space-between;
   font-size: 40px;
   font-weight: 800;
+  width: 1090px;
   padding: 20px;
+  position:absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .form button {
@@ -20,6 +26,7 @@
   outline: 0;
   background: #FFFFFF;
   width: 100%;
+  width: 400px;
   border: 0;
   padding: 15px;
   color: #FFFFFF;
@@ -27,6 +34,8 @@
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+  transform: translate(85%, 50%);
+  z-index: 2;
 }
 
 body {
@@ -112,11 +121,11 @@ body {
  }
  
  .input:focus, input:hover {
-  outline: none;
-  border-color: rgba(234,76,137,0.4);
-  background-color: #fff;
-  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
- }
+    outline: none;
+    border-color: rgba(35, 187, 224, 0.397);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(81, 230, 250, 0.1);
+   }
  
  .icon {
   position: absolute;
