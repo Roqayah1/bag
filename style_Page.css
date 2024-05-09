@@ -1,90 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
-
-.login-page {
-  width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
-}
-.form {
-  background: #b6c1c967;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 40px;
-  font-weight: 800;
-  width: 1090px;
-  padding: 20px;
-  position:absolute;
-  left: 50%;
-  top: 60%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-.form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #FFFFFF;
-  width: 100%;
-  width: 400px;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-  transform: translate(85%, 50%);
-  z-index: 2;
-}
-
-body {
-  background-color: aliceblue;  
-}
-.nav1{
-    padding: 5px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0%;
-    z-index: 999;
-    background-color: #f3f4f6;
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
-    width: 95%;
-    list-style: none;
-}
-.nav1 .logo h4{
-    color: #424144;
-    border-bottom: 4px solid #68869A;
-}
-
-.nav1 .ul1 li{
-    
-    display: inline-block;
-}
-.nav1 .ul1 li a{
-    display: block;
-    margin-left: 30px;
-    color: #424144;
-    border-bottom: 4px solid transparent;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.nav1 .ul1 li .active{
-    border-bottom: 4px solid #68869A;
-}
-
-.nav1 .ul1 li a i{
-    color: #68869A;
-}
-
-.nav1 .ul1 li a:hover{
-    border-bottom: 4px solid #68869A;
-}
-
+/* تاقات مربع البحث */
 .group {
   display: flex;
   align-items: center;
@@ -121,11 +35,11 @@ body {
  }
  
  .input:focus, input:hover {
-    outline: none;
-    border-color: rgba(35, 187, 224, 0.397);
-    background-color: #fff;
-    box-shadow: 0 0 0 4px rgba(81, 230, 250, 0.1);
-   }
+  outline: none;
+  border-color: rgba(234,76,137,0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+ }
  
  .icon {
   position: absolute;
@@ -134,5 +48,285 @@ body {
   width: 130%;
   height: 1rem;
  
- 
  }
+/* */
+/* لون الخلفية */
+ body{
+  background-color: aliceblue;
+}
+/* */
+/* headerتنسيقات ال  */
+.nav1{
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index: 999;
+  background-color: #f3f4f6;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+  width: 95%;
+  list-style: none;
+}
+.nav1 .logo h4{
+  color: #424144;
+  border-bottom: 4px solid #68869A;
+}
+
+.nav1 .ul1 li{
+  
+  display: inline-block;
+}
+.nav1 .ul1 li a{
+  display: block;
+  margin-left: 30px;
+  color: #424144;
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav1 .ul1 li .active{
+  border-bottom: 4px solid #68869A;
+}
+
+.nav1 .ul1 li a i{
+  color: #68869A;
+}
+
+.nav1 .ul1 li a:hover{
+  border-bottom: 4px solid #68869A;
+}
+
+/* */
+.form {
+  background: #b6c1c967;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+  font-weight: 800;
+  width: 1200px;
+  padding: 20px;
+  position:absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+/* خلفية الازرار */
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    align-items: center;
+    background: #FFFFFF;
+    width: 100%;
+    width: 400px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    transform: translate(85%, 50%);
+    z-index: 2;
+
+    max-width: 450px;
+    justify-content: center;
+    text-align: center;
+  }
+
+/* تنسيقات الازرار*/
+
+.button2 {
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0d0c22;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.button2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+background-color: #FFFFFF;
+  z-index: -1;
+}
+
+.button2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background-color:#FFFFFF ; 
+  border-radius: .5rem;
+  z-index: -1;
+  transition: all .3s ease-in;
+}
+
+.button2:hover::after {
+  opacity: 0;
+}
+
+.button2-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+  z-index: -1;
+}
+
+.button2-border::before {
+  content: "";
+  position: absolute;
+  border-radius: .5rem;
+  padding: 1px;
+  inset: 0;
+background-color: #FFFFFF; 
+ pointer-events: none;
+}
+
+.button1 {
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0d0c22;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.button1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+background-color: #FFFFFF;
+  z-index: -1;
+}
+
+.button1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background-color:#FFFFFF ; 
+  border-radius: .5rem;
+  z-index: -1;
+  transition: all .3s ease-in;
+}
+
+.button1:hover::after {
+  opacity: 0;
+}
+
+.button1-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+  z-index: -1;
+}
+
+.button1-border::before {
+  content: "";
+  position: absolute;
+  border-radius: .5rem;
+  padding: 1px;
+  inset: 0;
+background-color: #FFFFFF; 
+ pointer-events: none;
+}
+
+
+.button {
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0d0c22;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+background-color: #FFFFFF;
+  z-index: -1;
+}
+
+.button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background-color:#FFFFFF ; 
+  border-radius: .5rem;
+  z-index: -1;
+  transition: all .3s ease-in;
+}
+
+.button:hover::after {
+  opacity: 0;
+}
+
+.button-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+  z-index: -1;
+}
+
+.button-border::before {
+  content: "";
+  position: absolute;
+  border-radius: .5rem;
+  padding: 1px;
+  inset: 0;
+background-color: #FFFFFF; 
+ pointer-events: none;
+}
