@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+  width: 95%;
+  overflow: hidden;
+  background-image: url(ap.jpg);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+  .login {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .login h2 {
+    font-size: 2em;
+    color: #030303;
+    width: 150%;
+  }
+  .login .inputBx {
+    position: relative;
+    width: 100%;
+  }
+  .login .inputBx input {
+    position: relative;
+    width: 100%;
+    padding: 12px 20px;
+    background: transparent;
+    border: 2px solid #000000;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: #000000;
+    box-shadow: none;
+    outline: none;
+  }
+  .login .inputBx input[type="submit"] {
+    width: 100%;
+    background: #000000;
+    background: linear-gradient(45deg, #2590e7, #1896b6b0);
+    border: none;
+    cursor: pointer;
+  }
+  .login .inputBx input::placeholder {
+    color: rgba(0, 0, 0, 0.952);
+  }
+  .box{
+    text-align: center;
+    transform: translate(-230%, -130%);
+    font-size: 1.2em;
+}
