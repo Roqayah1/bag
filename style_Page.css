@@ -181,7 +181,8 @@ background-color:#FFFFFF ;
 }
 
 .button2:hover::after {
-  opacity: 0;
+  background-color: #b6bdc9;
+  box-shadow: 0 0 0 5px #cad3e05f;
 }
 
 .button2-border {
@@ -244,7 +245,8 @@ background-color:#FFFFFF ;
 }
 
 .button1:hover::after {
-  opacity: 0;
+  background-color: #b6bdc9;
+  box-shadow: 0 0 0 5px #cad3e05f;
 }
 
 .button1-border {
@@ -267,7 +269,6 @@ background-color: #FFFFFF;
  pointer-events: none;
 }
 
-
 .button {
   padding: 1rem 2rem;
   border-radius: .5rem;
@@ -278,6 +279,7 @@ background-color: #FFFFFF;
   text-align: center;
   backdrop-filter: blur(10px);
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .button::before {
@@ -291,6 +293,7 @@ background-color: #FFFFFF;
   border-radius: .5rem;
 background-color: #FFFFFF;
   z-index: -1;
+
 }
 
 .button::after {
@@ -308,7 +311,8 @@ background-color:#FFFFFF ;
 }
 
 .button:hover::after {
-  opacity: 0;
+  background-color: #b6bdc9;
+  box-shadow: 0 0 0 5px #cad3e05f;
 }
 
 .button-border {
