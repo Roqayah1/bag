@@ -53,7 +53,12 @@ body {
   background: linear-gradient(45deg, #2590e7, #1896b6b0);
   border: none;
   cursor: pointer;
-  
+}
+#b1{
+    transform: translateX(-2%);
+}
+#b2{
+    transform: translateX(6%);
 }
 .login .inputBx input::placeholder {
   color: rgba(0, 0, 0, 0.952);
