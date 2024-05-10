@@ -1,0 +1,64 @@
+body{
+    background-color: #f0f8ff;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f0f0f0;
+}
+
+.circle {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #3498db; /* اللون الافتراضي */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: background-color 0.5s ease;
+}
+
+.circle:hover {
+	background-color: #e74c3c; /* اللون عند التحويل */
+}
+
+#name1 {
+	top: 200%;
+
+    right: -160%;
+
+    transform: scale(1.5);
+}
+
+#name2 {
+	top: 200%;
+
+    right: -160%;
+
+    transform: scale(1.5);
+}
+
+#name3 {
+	top: 200%;
+
+    right: -160%;
+
+    transform: scale(1.5);
+}
+
+#name4 {
+	top: 200%;
+
+
+    transform: scale(1.5);
+}
+
+#name5 {
+	top: 200%;
+	width: 50%;
+    transform: scale(1.5);
+}
