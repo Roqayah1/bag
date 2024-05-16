@@ -1,0 +1,55 @@
+/*كود الخلفية*/
+body{
+    background-image: url(bag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*كود شريط التنقل*/
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    margin-left: 100px;
+    color: #000000;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar .menu li .active{
+    border-bottom: 4px solid #ffffff;
+}
+
+.navbar .menu li a i{
+    color: #ffffff;
+}
+
+.navbar .menu li a:hover{
+    border-bottom: 4px solid #ffffff;
+}
+
+#a1{
+    margin-top: 35;
+    transform: translateX(250%);
+}
+
+#a2{
+    margin-top: 35;
+    transform: translateX(400%);
+}
+
+#a3{
+    margin-top: 35;
+    transform: translateX(520%);
+}
+
+#a4{
+    margin-top: 35;
+    transform: translateX(975%);
+}
