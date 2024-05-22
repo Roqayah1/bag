@@ -103,37 +103,23 @@ body{
     color: white;
 }
 
-#card1{
-    margin-top: -90px;
-    margin-left: 35px;
-    width: 250px;
-    height: 250px;
-}
-
-#card2{
-    margin-top: -90px;
-    margin-left: 35px;
-    width: 250px;
-    height: 248px;
-}
-
 #card3{
-    margin-top: -92px;
+    margin-top: 20px;
     margin-left: 35px;
     width: 250px;
     height: 250px;
 }
 
 #card4{
-    margin-top: 40px;
-    margin-left: 200px;
+    margin-top: 20px;
+    margin-left: 35px;
     width: 250px;
     height: 250px;
 }
 
 #card5{
-    margin-top: 40px;
-    margin-left: 250px;
+    margin-top: 20px;
+    margin-left: 35px;
     width: 250px;
     height: 250px;
 }
