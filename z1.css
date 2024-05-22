@@ -1,0 +1,413 @@
+
+@media (min-width: 590%){
+    .cards { grid-template-columns: repeat(2,1fr);}
+  }
+    
+    @media (min-height: 230%){ 
+      .cards { grid-template-columns: repeat(3,1fr);}
+  }
+  
+  /*تنسيقات الخلفية*/
+  body{
+      background-image: url("../imges/A.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  /*حجم الخلفية*/
+  .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+  margin-left: 5.25%;
+  margin-top: 40;
+
+  }
+
+/*اكواد شريط التنقل*/
+
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a{
+  display: block;
+  margin-left: 100px;
+  color: #ffffff;
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.navbar .menu li .active{
+  border-bottom: 4px solid #ffffff;
+}
+
+.navbar .menu li a i{
+  color: #ffffff;
+}
+
+.navbar .menu li a:hover{
+  border-bottom: 4px solid #ffffff;
+}
+
+#a4{
+  margin-top: 30;
+  transform: translateX(1100%);
+}
+
+  h1 {
+    font-weight: 150;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 0;
+    color: #004AAD;
+  }
+  h2 {
+      font-weight: 150;
+      font-size: 130%;
+      text-align: center;
+      margin-top: 0;
+      color: #004AAD;
+    }
+  /*الخلفية البيضه */
+  .control-group {
+    display: inline-block;
+    vertical-align: top;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 180px;
+    height: 280px;
+    margin: 10px;
+    margin-left: 85px;
+    margin-top: 50;
+    box-shadow: 0 5px 25px rgb(1, 1, 1);
+  }
+  /*تنسيقات حجم النص الدخلي*/
+  .control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  /*زر الرايديو*/
+  .control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .control__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+  }
+  .control--radio .control__indicator {
+    border-radius: 50%;
+  }
+  .control:hover input ~ .control__indicator,
+  .control input:focus ~ .control__indicator {
+    background: #ccc;
+  }
+  .control input:checked ~ .control__indicator {
+    background: #2aa1c0;
+  }
+  .control:hover input:not([disabled]):checked ~ .control__indicator,
+  .control input:checked:focus ~ .control__indicator {
+    background: #0e647d;
+  }
+  .control input:disabled ~ .control__indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  .control input:checked ~ .control__indicator:after {
+    display: block;
+  }
+  .control--radio .control__indicator:after {
+    left: 7px;
+    top: 7px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .control--radio input:disabled ~ .control__indicator:after {
+    background: #7b7b7b;
+  }
+  /*القائمة المنسدلة*/
+  .select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .select select {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: #e6e6e6;
+    color: #7b7b7b;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .select select::-ms-expand {
+    display: none;
+  }
+  .select select:hover,
+  .select select:focus {
+    color: #000;
+    background: #ccc;
+  }
+  .select select:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .select__arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+  }
+  .select select:hover ~ .select__arrow,
+  .select select:focus ~ .select__arrow {
+    border-top-color: #000;
+  }
+  .select select:disabled ~ .select__arrow {
+    border-top-color: #ccc;
+  }
+  /*تنسيقات مربع الاختيار*/
+  
+  .input1 {
+    width: 200px;
+    height: 30px;
+    margin-top: 100;
+    transform: translateX(1%);
+    padding: 12px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 24px;
+    margin-top: -0% ;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .input1:placeholder-shown{
+    text-align: right;
+  }
+  
+  .input1:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+  }
+  
+  /* Placeholder Styling */
+  .input1::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Hover Effect */
+  .input1:hover {
+    background-color: #f0f8ff;
+  }
+  
+  .input2 {
+    width: 200px;
+    height: 30px;
+    padding: 12px;
+    transform: translatey(100%);
+    transform: translateX(1%);
+    margin-top: -5;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 24px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .input2:placeholder-shown{
+    text-align: right;
+  }
+  
+  .input2:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+  }
+  
+  /* Placeholder Styling */
+  .input2::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Hover Effect */
+  .input2:hover {
+    background-color: #f0f8ff;
+  }
+  
+  .input4 {
+    width: 200px;
+    height: 30px;
+    margin-top: -5;
+    transform: translatey(100%);
+    transform: translateX(1%);
+    padding: 12px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 24px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .input4:placeholder-shown{
+    text-align: right;
+  }
+  
+  .input4:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+  }
+  
+  /* Placeholder Styling */
+  .input4::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Hover Effect */
+  .input4:hover {
+    background-color: #f0f8ff;
+  }
+  
+  /*زر الارسال*/
+  
+  .button {
+      border-radius: 20px;
+      border: 1px solid #004AAD;
+      background-color: #004bada2;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 8px 30px;
+      letter-spacing: 1px;
+    margin-left: 18%;
+      transform: translateY(80%);
+      text-transform: uppercase;
+      transition: transform 30ms ease-in;
+  }
+  
+  .button:hover{
+      cursor: pointer;
+      background-color: #ffffff;
+      color: #004AAD;
+  }
+  
+  
+  .button:focus {
+      outline: none;
+  }
+  
+  .button.ghost {
+      background-color: transparent;
+      border-color: #FFFFFF;
+  }
+  
+  /**/
+  
+  .button1 {
+      border-radius: 20px;
+      border: 1px solid #004AAD;
+      background-color: #004bada2;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 8px 30px;
+      letter-spacing: 1px;
+    left: 90%;
+    margin-left: 20%;
+    transform: translateY(160%);
+      text-transform: uppercase;
+      transition: transform 30ms ease-in;
+  }
+  
+  .button1:hover{
+      cursor: pointer;
+      background-color: #ffffff;
+      color: #004AAD;
+  }
+  
+  .button1:focus {
+      outline: none;
+  }
+  
+  .button1.ghost {
+      background-color: transparent;
+      border-color: #FFFFFF;
+  }
+  
+  /**/
+  
+  .button2 {
+      border-radius: 20px;
+      border: 1px solid #004AAD;
+      background-color: #004bada2;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 8px 30px;
+      letter-spacing: 1px;
+   margin-left: 26%;
+      transform: translateY(99%);
+      text-transform: uppercase;
+      transition: transform 30ms ease-in;
+  }
+  
+  .button2:hover{
+      cursor: pointer;
+      background-color: #ffffff;
+      color: #004AAD;
+  }
+  
+  
+  .button2:focus {
+      outline: none;
+  }
+  
+  .button2.ghost {
+      background-color: transparent;
+      border-color: #FFFFFF;
+  }
+  
+  
+  
+  
+   
+   
